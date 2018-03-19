@@ -1,0 +1,14 @@
+https://zero.nyc
+
+
+main menu interaction
+
+IF mouseover OurWork THEN
+    change mainMenu container with fastImages
+ELSE IF mouseover AboutUs THEN
+    change AboutUs container with dancingDude.gif
+ELSE IF mouseover Design feed THEN
+    move handImage from left to right 500px
+END
+
+

@@ -1,0 +1,44 @@
+SET gameCounter to 0
+
+ASSIGN rock or paper or scissors to randomHand
+
+ASSIGN a randomHand to playerOne
+ASSIGN a randomHand to playerTwo
+SET playerOneScore to 0
+SET playerTwoScore to 0
+
+For gameCounter <= 3  
+
+    IF playerOne === rock && playerTwo == scissors THEN
+        ADD one point to playerOneScore
+        DISPLAY "Player One Won This Round!"
+    ELSE IF playerOne === paper && playerTwo == rock THEN
+        ADD one point to playerOneScore
+        DISPLAY "Player One Won This Round!"
+    ELSE IF playerOne === scissors && playerTwo == paper THEN
+        ADD one point to playerOneScore
+        DISPLAY "Player One Won This Round!"
+    ELSE IF playerTwo === rock && playerOne == scissors THEN
+        ADD one point to playerTwoScore
+        DISPLAY "Player Two Won This Round!"
+    ELSE IF playerTwo === paper && playerOne == rock THEN
+        ADD one point to playerTwoScore
+        DISPLAY "Player Two Won This Round!"
+    ELSE IF playerTwo === scissors && playerTwo == paper THEN
+        ADD one point to playerTwoScore
+        DISPLAY "Player Two Won This Round!"
+    ELSE
+        playerOne === playerTwo
+        DISPLAY "Same Hand, Go Again"
+    END IF
+
+    IF playerOneScore === 3 THEN
+        DISPLAY "Player One is The Winner"
+    ELSE IF playerTwoScore === 3 THEN
+        DISPLAY "Player Two is The Winner"
+    END IF
+END FOR
+
+
+
+
