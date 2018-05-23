@@ -3,7 +3,7 @@ const artBox = document.querySelector("#two");
 let allPlayers = [];
 //handle API request
 function getPlayerStats(playerName) {
-  const API_KEY = "8J2LDOGO4LMSMXD0G8RMJWO2CHCXYGYC";
+  const API_KEY = "";
   const baseURL = "https://api.rocketleaguestats.com/v1/search/players";
 
   const url = `${baseURL}?apikey=${API_KEY}&display_name=${playerName} `;
