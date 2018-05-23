@@ -1,0 +1,24 @@
+{
+  "name": "es2015_to_es5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "serve:dev": "webpack-dev-server --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.6.0"
+  },
+  "dependencies": {
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
